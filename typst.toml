@@ -1,0 +1,17 @@
+[package]
+name = "tul-template"
+version = "0.1.4"
+compiler = "0.12.0"
+entrypoint = "lib.typ"
+repository = "https://github.com/Whitebowfr/tul-typst-template"
+authors = ["Whitebow"]
+license = "MIT-0"
+description = "A scientific paper based on the template provided by the politechnika lodzka university"
+keywords = ["Politechnika Lodzka", "TUL", "IEEE", "Electrical Engineering", "Computer Science", "Computer Engineering", "Software"]
+categories = ["paper"]
+disciplines = ["computer-science", "engineering"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
