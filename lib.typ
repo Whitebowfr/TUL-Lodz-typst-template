@@ -94,7 +94,7 @@
       )
     },
     header: {
-      align(right)[#grid(columns: 2, gutter: 10pt,image("media/image1.png", height: 40pt),image("media/image2.png", height: 40pt))]
+      align(right)[#grid(columns: 2, gutter: 10pt,image("image1.png", height: 40pt),image("image2.png", height: 40pt))]
       v(-10pt)
       line(length: 100%)
       text(top-edge: 0pt)[TEAM PROJECT - Final Report 2025, Team X, Course XX]
@@ -145,7 +145,7 @@
       // First-level headings are centered smallcaps.
       // We don't want to number the acknowledgment section.
       let is-ack = it.body in ([Acknowledgment], [Acknowledgement], [Acknowledgments], [Acknowledgements], [Author bios and contributions])
-      set text(if is-ack { 13pt } else { 15pt }, fill: accentcolor, weight: 
+      set text(if is-ack { 13pt } else { 15pt }, fill: accentcolor, weight:
      "bold")
       show: block.with(above: 15pt, below: 13.75pt, sticky: true)
       show: smallcaps
@@ -201,7 +201,7 @@
         if (is-last) {
           text("and ")
         }
-        upper(text(authors.at(i).firstname.first()) + ". " + authors.at(i).lastname + ", ") 
+        upper(text(authors.at(i).firstname.first()) + ". " + authors.at(i).lastname + ", ")
       }
 
       set text(11pt, style: "italic", weight: "regular")
@@ -209,7 +209,7 @@
       if ("name" in supervisor) {
         "Supervisor : "
         supervisor.name
-        " (e-mail : " 
+        " (e-mail : "
         supervisor.email
         ")"
       }
@@ -222,7 +222,7 @@
   if abstract != none {
     set par(spacing: 0.45em, leading: 0.45em)
     set text(9pt, weight: 700, spacing: 150%)
-    
+
     // [_Abstract_---#h(weak: true, 0pt)#abstract]
     place(
       top,
