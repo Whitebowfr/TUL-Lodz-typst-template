@@ -52,7 +52,7 @@ Describe the path from the starting point stated above, through detailed researc
 This section will describe the process of finding your solution.
 
 == State of the art
-Research on existing knowledge and solutions in relation to the specific problem defined above. This section will contain the most links to scientific articles or websites of commercial solutions. Include the references in square brackets: [1].  For a complete discussion of references and their formats, see the IEEE style manual at www.ieee.org/authortools.
+Research on existing knowledge and solutions in relation to the specific problem defined above. This section will contain the most links to scientific articles or websites of commercial solutions. Include the references in square brackets: @first_citation.  For a complete discussion of references and their formats, see the IEEE style manual at www.ieee.org/authortools.
 
 == Innovative ideas
 Ideas developed by your team, adding new value to better address the stated problem, possibly leading to more effective solutions.
@@ -62,7 +62,7 @@ Which of the above ideas your team finds the most worth developing and why?
 
 #figure(
   image("media/image3.png"),
-  caption: [Prepare good resolution of images (at least 300dpi, preferably 600dpi) and max 88mm wide. If the figure comes from external reference, cite it here]
+  caption: [Prepare good resolution of images (at least 300dpi, preferably 600dpi) and max 88mm wide. If the figure comes from external reference, cite it here @second_citation]
 )
 
 = Solution Implementation
@@ -85,7 +85,7 @@ How your team plans to verify (or has already verified) if your solution effecti
     [$4 pi M$], [magnetization], [1 G $-> 10^3$ /($4 pi$) A/m],
     [$delta$], [specific magnetization], [1 erg/(G·g) = 1 emu/g $->$ 1 A·m^2/kg],
   ),
-  caption: [Common units for magnetic properties]
+  caption: [Common units for magnetic properties #footnote([Typically scientific articles do not use vertical lines in tables. Short footnotes under the table can provide some additional information, or a source for the data @third_citation])]
 )
 
 = Conclusions and perspectives

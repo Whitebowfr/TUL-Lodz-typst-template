@@ -52,6 +52,19 @@
   show figure.caption: set align(start)
   show figure.caption.where(kind: table): set align(center)
 
+  set table(
+    stroke: (x, y) => if y == 0 {
+      (bottom: 0.7pt + black)
+    }
+  )
+
+  show table: tab => {
+    line(length: 100%)
+    v(-1.5em)
+    line(length: 100%)
+    v(-1.5em)
+    tab
+  }
   // Adapt supplement in caption independently from supplement used for
   // references.
   set figure.caption(separator: [. ])
@@ -253,7 +266,7 @@
   [= Author bios and contributions]
 
   for i in range(authors.len()) {
-    wrap-content(image(authors.at(i).image), [#smallcaps(text(weight: "bold", authors.at(i).firstname.first() + ". " + authors.at(i).lastname))
+    wrap-content(image(authors.at(i).image, height: 3.26cm, width: 2.56cm, fit: "cover"), [#smallcaps(text(weight: "bold", authors.at(i).firstname.first() + ". " + authors.at(i).lastname))
           #authors.at(i).description])
     }
 }
